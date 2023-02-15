@@ -15,5 +15,5 @@ class SpellChecker:
 if __name__ == "__main__":
     converter= Converter()
     spell=SpellChecker()
-    sentence = "این صمینار د ر دانشکاه غلم و سنعت  تا ۱۲ شهرییییور ادامه می یابد"
+    sentence = "این صمینار د ر دانشکاه غلم و سنعت  تا 1400/4/4 شهرییییور ادامه می یابد"
     print(converter.showText(  spell.spell_correcter(sentence)))

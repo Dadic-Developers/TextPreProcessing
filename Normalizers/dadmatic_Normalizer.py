@@ -4,7 +4,7 @@ from printPersianText import Converter
 
 class DadMatNormalizer:
     def __init__(self):
-        # self.__converter=Converter()
+        self.__converter=Converter()
         self.__normalizer = Normalizer(
             full_cleaning=False,
             unify_chars=True,
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     normalize = DadMatNormalizer()
     text = """
             <p>
-            دادماتولز اولین نسخش سال ۱۴۰۰ منتشر شده. 
+            دادماتولز اولین نسخش سال 1300/3/3 منتشر شده. 
             امیدواریم که این تولز بتونه کار با متن رو براتون شیرین‌تر و راحت‌تر کنه
             لطفا با ایمیل dadmatools@dadmatech.ir با ما در ارتباط باشید
             آدرس گیت‌هاب هم که خب معرف حضور مبارک هست:
