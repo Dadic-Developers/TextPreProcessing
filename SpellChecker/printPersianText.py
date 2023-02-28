@@ -11,4 +11,4 @@ class Converter:
 if __name__ == "__main__":
     converter= Converter()
     sentence = "این سمینار تا ۱۲ شهرییییور ادامه می یابد"
-    print(converter.showText(sentence))
+    print(sentence)

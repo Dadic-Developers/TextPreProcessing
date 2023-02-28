@@ -15,11 +15,6 @@ class sysIO :
         # Closing file
         f.close()
         return data
-    def writeFile (self, data, fileName):
-        with open(fileName, 'w') as f:
-            print >> f, data
-        # f = open(fileName, "w")
-        # f.write(data)
-        # f.close()
-        # with open(fileName, "w") as outfile:
-        #      json.dump(data, outfile)
+    def writeFile (self, data, fileName='/media/daadik/Local Disk/backend/TextPreProcessing/Data/outFile.json'):
+        with open(fileName,"w", encoding='utf-8') as jsonfile:
+         json.dump(data,jsonfile,ensure_ascii=False)
